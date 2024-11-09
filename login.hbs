@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker/Dashboard</title>
+        <link rel="stylesheet" href="login.css">
+        <style>
+           
+        /* Style for placeholder text */
+        input::placeholder {
+            font-size: 18px; /* Adjust the font size */
+            color: #aaa; /* Placeholder color */
+            opacity: 1; /* Ensure full opacity */
+        }
+
+        .form-control {
+            font-size: 20px; /* Font size for the input field */
+            padding: 10px; /* Add padding for comfort */
+        }
+
+        .form-content {
+            font-size: 20px; /* Font size for the password field */
+            padding: 10px; /* Add padding for comfort */
+        }
+    
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo"><h1>Dashboard</h1></div>
+                <div class="links">
+                    <ul>
+                        <li><a class="active" href="#" style="font-size: 25px;"> Home</a></li>
+                        <li><a class href="#" style="font-size: 23px;">About</a></li>
+                        <li><a href="#" style="font-size: 23px;">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="home-content">
+                <div class="left-container">
+                    <div class="home-container">
+                        <h1 class="heading ">My Expense Tracker.</h1>
+                        <div class="paragraphs">
+                        <P1 class="p1">Take control of your daily spending and gain insight into your financial habits. 
+                            Does your spending truly align with your income? You might have an idea, but let’s dig deeper.
+                       </P1><br/><br/>
+
+                       <p2 class="p2">  Have you ever wondered why the wealthy stay wealthy while others struggle? 
+                        The key lies in mastering cash flow—understanding both income and expenses.  </p2><br/><br/>
+
+                        <p3 class="p3"> Now’s your chance to track your spending and make more informed financial decisions.
+                            Ready to take control? Let’s begin the journey to better financial health!</p3>
+
+                       
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Loging form -->
+                <div class="card shadow reg-card">
+                    
+                    <div class="card-body">
+                        <form action="/auth/login" method="post">
+                            <div class="mb-3">
+                                <label for="email" class="fw-bold" style="font-size: 25px;">Email Address</label>
+
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                id="Email Address" 
+                                placeholder="Enter your Email Address"
+                                 required name="email"
+                                 />
+                            </div>
+                                <div class="mb-3">
+                                 <label for="password" class="fw-bold" style="font-size: 25px;">Password</label>
+                                <input 
+                                type="password" 
+                                class="form-content"
+                                id="password" 
+                                placeholder="Enter your password" 
+                                required name="Password"/>
+                        
+                             </div>
+                             <div class="remember-me">
+                                <input type="checkbox" style="transform: scale(1.9); margin: 20px;">
+                                <span style="color: #0e0d0d">I accept Terms of Service</span>
+                            </div>
+                            
+                             <button type="submit" class="btn" style="font-size: 20px;">Login</button>
+
+                             <div class="register">
+                             <span>Don't have an account?</span>
+                             <a href="/register" class="btn-register" style="font-size: 20px; text-decoration: none;">Register here</a>
+                              </div>
+
+
+                            <div class="privacy">
+                                <a href="#">Privacy Policy</a>
+                            </div>
+                    
+                            
+                        </div>
+                    
+                           
+                            
+                        
+                            
+                        </form>
+                    </div>
+                    
+
+                </div>
+
+            
+                
+                
+        </header>
+        <footer class="footer">
+            <p>&copy; 2024 Expense Tracker. All Rights Reserved.</p>
+        </footer>
+        <script src="./login-script.js"></script>
+        
+    </body>
+</html>
